@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn</title>
+<style>
+body { font-family:Arial; background:#0b0f19; color:white; padding:40px; }
+.card { background:#111827; padding:20px; margin:20px 0; border-radius:10px; }
+</style>
+</head>
+
+<body>
+
+<h1>Free Learning Resources</h1>
+
+<div class="card">
+SQL: Find duplicate records  
+<br><br>
+SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) > 1;
+</div>
+
+<div class="card">
+SQL: Top 3 salaries  
+<br><br>
+SELECT DISTINCT salary FROM table ORDER BY salary DESC LIMIT 3;
+</div>
+
+<a href="index.html">← Back</a>
+
+</body>
+</html>
