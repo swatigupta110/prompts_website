@@ -1,108 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insight Stack</title>
-
 <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0b0f19;
-  color: white;
-}
+body { margin:0; font-family:Arial; background:#0b0f19; color:white; }
+.nav { display:flex; justify-content:space-between; padding:20px 40px; background:#020617; }
+.nav a { color:#aaa; margin-left:20px; text-decoration:none; }
 
-/* NAVBAR */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: #020617;
-}
+.hero { text-align:center; padding:100px 20px; }
+.btn { padding:12px 25px; background:#38bdf8; border:none; border-radius:20px; cursor:pointer; }
 
-.nav .logo {
-  font-weight: bold;
-  font-size: 18px;
-}
+.section { padding:60px 20px; max-width:1000px; margin:auto; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.card { background:#111827; padding:20px; border-radius:10px; }
 
-.nav a {
-  color: #aaa;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: radial-gradient(circle at top, #111827, #020617);
-}
-
-.hero h1 {
-  font-size: 48px;
-  background: linear-gradient(90deg, #38bdf8, #a78bfa);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.hero p {
-  color: #aaa;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.btn {
-  padding: 15px 30px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #38bdf8, #a78bfa);
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* SECTION */
-.section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #111827;
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid #1f2937;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 40px;
-  color: #666;
-}
+.footer { text-align:center; padding:30px; color:#666; }
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="nav">
-  <div class="logo">Insight Stack</div>
+  <div><b>Insight Stack</b></div>
   <div>
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="learn.html">Learn</a>
     <a href="products.html">Products</a>
     <a href="about.html">About</a>
@@ -110,76 +31,31 @@ body {
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>Master Data Analytics & AI Skills</h1>
-  <p>SQL • Data Science • Prompt Engineering — Learn, Practice, and Get Job Ready</p>
-
-  <button class="btn">Explore Now</button>
+  <h1>Master Data Analytics & AI</h1>
+  <p>SQL • Data Science • Prompt Engineering</p>
+  <a href="products.html"><button class="btn">Explore Products</button></a>
 </div>
 
-<!-- CATEGORIES -->
 <div class="section">
-  <h2>Explore Categories</h2>
-
+  <h2>Categories</h2>
   <div class="grid">
-    <div class="card">
-      <h3>📊 SQL Interview Prep</h3>
-      <p>Practice real interview questions with solutions</p>
-    </div>
-
-    <div class="card">
-      <h3>🤖 Prompt Engineering</h3>
-      <p>Learn and use powerful AI prompts</p>
-    </div>
-
-    <div class="card">
-      <h3>📈 Data Analytics</h3>
-      <p>Understand core concepts & real-world problems</p>
-    </div>
+    <div class="card">SQL Interview Prep</div>
+    <div class="card">Prompt Engineering</div>
+    <div class="card">Data Analytics</div>
   </div>
 </div>
 
-<!-- PRODUCTS -->
 <div class="section">
-  <h2>Featured Products</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>SQL Interview Kit</h3>
-      <p>50 real SQL questions with solutions</p>
-      <button class="btn">View</button>
-    </div>
-
-    <div class="card">
-      <h3>AI Prompt Pack</h3>
-      <p>Prompts for data analysts & creators</p>
-      <button class="btn">View</button>
-    </div>
+  <h2>Featured Product</h2>
+  <div class="card">
+    <h3>SQL Interview Kit</h3>
+    <p>50 real questions with solutions</p>
+    <a href="product-sql.html"><button class="btn">View</button></a>
   </div>
 </div>
 
-<!-- FREE CONTENT -->
-<div class="section">
-  <h2>Free Resources</h2>
-
-  <div class="grid">
-    <div class="card">Free SQL Practice Questions</div>
-    <div class="card">Data Analytics Notes</div>
-    <div class="card">Prompt Engineering Tips</div>
-  </div>
-</div>
-
-<!-- CTA -->
-<div class="section" style="text-align:center;">
-  <h2>Start Your Journey Today</h2>
-  <button class="btn">Get Started</button>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 Insight Stack
-</div>
+<div class="footer">© 2026 Insight Stack</div>
 
 </body>
 </html>
